@@ -192,7 +192,7 @@
   {
     "app_id": 4,
     "submission_date": "2026-02-20",
-    "current_status": "Applied",
+    "current_status": "Rejected",
     "notes": "Submitted on LinkedIn",
     "isArchived": false,
     "student": {
@@ -218,10 +218,6 @@
       {
         "tag_id": 3,
         "tag_name": "High Priority"
-      },
-      {
-        "tag_id": 4,
-        "tag_name": "Remote"
       }
     ],
     "contacts": [
@@ -306,6 +302,19 @@
     ],
     "interview_rounds": [],
     "offer": null,
-    "status_history": []
+    "status_history": [
+      {
+        "history_id": 10,
+        "status": "Applied",
+        "changed_at": "2026-02-22 09:00:00",
+        "notes": "Application submitted"
+      },
+      {
+        "history_id": 11,
+        "status": "Rejected",
+        "changed_at": "2026-02-23 08:00:00",
+        "notes": "Auto-rejection email received"
+      }
+    ]
   }
 ]
