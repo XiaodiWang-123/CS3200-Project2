@@ -155,3 +155,6 @@ AI tools (ChatGPT) were used in this project for guidance and learning purposes,
 - Assisting with debugging errors  
 
 All final design decisions, implementation, and submitted work were completed and fully understood by the author.
+## Video Demo
+
+https://youtu.be/bljDv2nWaeM
