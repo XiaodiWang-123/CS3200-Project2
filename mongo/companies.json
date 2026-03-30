@@ -1,0 +1,77 @@
+[
+  {
+    "company_id": 1,
+    "company_name": "Google",
+    "industry": "Technology",
+    "hq_location": "Mountain View, CA",
+    "contacts": [
+      {
+        "contact_id": 1,
+        "contact_name": "Alice Recruiter",
+        "role": "Recruiter",
+        "email": "alice@google.com",
+        "phone": "111-111-1111"
+      }
+    ],
+    "job_postings": [
+      {
+        "job_id": 1,
+        "title": "Software Engineering Intern",
+        "location_mode": "hybrid",
+        "job_type": "internship"
+      },
+      {
+        "job_id": 3,
+        "title": "Data Science Intern",
+        "location_mode": "onsite",
+        "job_type": "internship"
+      }
+    ]
+  },
+  {
+    "company_id": 2,
+    "company_name": "Deloitte",
+    "industry": "Consulting",
+    "hq_location": "New York, NY",
+    "contacts": [
+      {
+        "contact_id": 2,
+        "contact_name": "Bob Manager",
+        "role": "Hiring Manager",
+        "email": "bob@deloitte.com",
+        "phone": "222-222-2222"
+      }
+    ],
+    "job_postings": [
+      {
+        "job_id": 2,
+        "title": "Data Analyst Intern",
+        "location_mode": "remote",
+        "job_type": "internship"
+      }
+    ]
+  },
+  {
+    "company_id": 3,
+    "company_name": "Stripe",
+    "industry": "FinTech",
+    "hq_location": "San Francisco, CA",
+    "contacts": [
+      {
+        "contact_id": 3,
+        "contact_name": "Cara Sourcer",
+        "role": "Sourcer",
+        "email": "cara@stripe.com",
+        "phone": "333-333-3333"
+      }
+    ],
+    "job_postings": [
+      {
+        "job_id": 4,
+        "title": "Backend Engineer Intern",
+        "location_mode": "remote",
+        "job_type": "internship"
+      }
+    ]
+  }
+]

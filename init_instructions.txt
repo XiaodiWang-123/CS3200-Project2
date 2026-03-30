@@ -1,0 +1,11 @@
+MongoDB initialization steps:
+
+1. Start MongoDB locally.
+2. Open terminal in the project root folder.
+3. Run the following commands:
+
+mongoimport --db internship_tracker_mongo --collection students --file mongo/students.json --jsonArray
+mongoimport --db internship_tracker_mongo --collection companies --file mongo/companies.json --jsonArray
+mongoimport --db internship_tracker_mongo --collection applications --file mongo/applications.json --jsonArray
+
+4. Verify the imported data in MongoDB Compass or mongosh.

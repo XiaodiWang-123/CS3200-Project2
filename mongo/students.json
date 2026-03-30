@@ -1,0 +1,16 @@
+[
+  {
+    "student_id": 1,
+    "name": "Xiaodi Wang",
+    "university": "Northeastern University",
+    "major": "CS",
+    "graduation_year": 2026
+  },
+  {
+    "student_id": 2,
+    "name": "Udhaya Bhuvanesh",
+    "university": "Northeastern University",
+    "major": "CS",
+    "graduation_year": 2026
+  }
+]

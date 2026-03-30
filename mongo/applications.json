@@ -1,0 +1,311 @@
+[
+  {
+    "app_id": 1,
+    "submission_date": "2026-02-01",
+    "current_status": "Interviewing",
+    "notes": "Submitted via company portal",
+    "isArchived": false,
+    "student": {
+      "student_id": 1,
+      "name": "Xiaodi Wang",
+      "university": "Northeastern University",
+      "major": "CS",
+      "graduation_year": 2026
+    },
+    "company": {
+      "company_id": 1,
+      "company_name": "Google",
+      "industry": "Technology",
+      "hq_location": "Mountain View, CA"
+    },
+    "job_posting": {
+      "job_id": 1,
+      "title": "Software Engineering Intern",
+      "location_mode": "hybrid",
+      "job_type": "internship"
+    },
+    "tags": [
+      {
+        "tag_id": 1,
+        "tag_name": "Dream Company"
+      }
+    ],
+    "contacts": [
+      {
+        "contact_id": 1,
+        "contact_name": "Alice Recruiter",
+        "role": "Recruiter",
+        "email": "alice@google.com",
+        "phone": "111-111-1111"
+      }
+    ],
+    "interview_rounds": [
+      {
+        "round_id": 1,
+        "round_type": "Phone Screen",
+        "scheduled_date": "2026-02-10",
+        "outcome": "Passed",
+        "notes": "Good communication"
+      },
+      {
+        "round_id": 2,
+        "round_type": "Technical",
+        "scheduled_date": "2026-02-15",
+        "outcome": "Pending",
+        "notes": "Waiting result"
+      }
+    ],
+    "offer": null,
+    "status_history": [
+      {
+        "history_id": 1,
+        "status": "Applied",
+        "changed_at": "2026-02-01 10:00:00",
+        "notes": "Submitted application"
+      },
+      {
+        "history_id": 2,
+        "status": "Interviewing",
+        "changed_at": "2026-02-10 09:00:00",
+        "notes": "Phone screen scheduled"
+      },
+      {
+        "history_id": 3,
+        "status": "Interviewing",
+        "changed_at": "2026-02-15 18:00:00",
+        "notes": "Technical interview completed"
+      }
+    ]
+  },
+  {
+    "app_id": 2,
+    "submission_date": "2026-02-05",
+    "current_status": "Applied",
+    "notes": "Referred by alumni",
+    "isArchived": false,
+    "student": {
+      "student_id": 1,
+      "name": "Xiaodi Wang",
+      "university": "Northeastern University",
+      "major": "CS",
+      "graduation_year": 2026
+    },
+    "company": {
+      "company_id": 2,
+      "company_name": "Deloitte",
+      "industry": "Consulting",
+      "hq_location": "New York, NY"
+    },
+    "job_posting": {
+      "job_id": 2,
+      "title": "Data Analyst Intern",
+      "location_mode": "remote",
+      "job_type": "internship"
+    },
+    "tags": [
+      {
+        "tag_id": 2,
+        "tag_name": "Referral"
+      },
+      {
+        "tag_id": 3,
+        "tag_name": "High Priority"
+      }
+    ],
+    "contacts": [],
+    "interview_rounds": [],
+    "offer": null,
+    "status_history": [
+      {
+        "history_id": 4,
+        "status": "Applied",
+        "changed_at": "2026-02-05 12:00:00",
+        "notes": "Referred by alumni"
+      }
+    ]
+  },
+  {
+    "app_id": 3,
+    "submission_date": "2026-02-10",
+    "current_status": "Offer",
+    "notes": "Completed final round",
+    "isArchived": false,
+    "student": {
+      "student_id": 2,
+      "name": "Udhaya Bhuvanesh",
+      "university": "Northeastern University",
+      "major": "CS",
+      "graduation_year": 2026
+    },
+    "company": {
+      "company_id": 2,
+      "company_name": "Deloitte",
+      "industry": "Consulting",
+      "hq_location": "New York, NY"
+    },
+    "job_posting": {
+      "job_id": 2,
+      "title": "Data Analyst Intern",
+      "location_mode": "remote",
+      "job_type": "internship"
+    },
+    "tags": [],
+    "contacts": [
+      {
+        "contact_id": 2,
+        "contact_name": "Bob Manager",
+        "role": "Hiring Manager",
+        "email": "bob@deloitte.com",
+        "phone": "222-222-2222"
+      }
+    ],
+    "interview_rounds": [
+      {
+        "round_id": 3,
+        "round_type": "Final",
+        "scheduled_date": "2026-02-18",
+        "outcome": "Passed",
+        "notes": "Received offer"
+      }
+    ],
+    "offer": {
+      "offer_id": 1,
+      "compensation": "$45/hr",
+      "deadline": "2026-03-01",
+      "offer_notes": "Offer accepted pending paperwork"
+    },
+    "status_history": [
+      {
+        "history_id": 5,
+        "status": "Interviewing",
+        "changed_at": "2026-02-12 14:00:00",
+        "notes": "Final round scheduled"
+      },
+      {
+        "history_id": 6,
+        "status": "Offer",
+        "changed_at": "2026-02-18 16:30:00",
+        "notes": "Offer received"
+      }
+    ]
+  },
+  {
+    "app_id": 4,
+    "submission_date": "2026-02-20",
+    "current_status": "Applied",
+    "notes": "Submitted on LinkedIn",
+    "isArchived": false,
+    "student": {
+      "student_id": 2,
+      "name": "Udhaya Bhuvanesh",
+      "university": "Northeastern University",
+      "major": "CS",
+      "graduation_year": 2026
+    },
+    "company": {
+      "company_id": 1,
+      "company_name": "Google",
+      "industry": "Technology",
+      "hq_location": "Mountain View, CA"
+    },
+    "job_posting": {
+      "job_id": 3,
+      "title": "Data Science Intern",
+      "location_mode": "onsite",
+      "job_type": "internship"
+    },
+    "tags": [
+      {
+        "tag_id": 3,
+        "tag_name": "High Priority"
+      },
+      {
+        "tag_id": 4,
+        "tag_name": "Remote"
+      }
+    ],
+    "contacts": [
+      {
+        "contact_id": 1,
+        "contact_name": "Alice Recruiter",
+        "role": "Recruiter",
+        "email": "alice@google.com",
+        "phone": "111-111-1111"
+      }
+    ],
+    "interview_rounds": [
+      {
+        "round_id": 4,
+        "round_type": "Technical",
+        "scheduled_date": "2026-02-27",
+        "outcome": "Failed",
+        "notes": "Need more DS fundamentals"
+      }
+    ],
+    "offer": null,
+    "status_history": [
+      {
+        "history_id": 7,
+        "status": "Applied",
+        "changed_at": "2026-02-20 11:15:00",
+        "notes": "Applied on LinkedIn"
+      },
+      {
+        "history_id": 8,
+        "status": "Interviewing",
+        "changed_at": "2026-02-27 08:30:00",
+        "notes": "Technical round scheduled"
+      },
+      {
+        "history_id": 9,
+        "status": "Rejected",
+        "changed_at": "2026-02-27 17:00:00",
+        "notes": "Rejected after interview"
+      }
+    ]
+  },
+  {
+    "app_id": 5,
+    "submission_date": "2026-02-22",
+    "current_status": "Rejected",
+    "notes": "Auto-rejection email",
+    "isArchived": false,
+    "student": {
+      "student_id": 1,
+      "name": "Xiaodi Wang",
+      "university": "Northeastern University",
+      "major": "CS",
+      "graduation_year": 2026
+    },
+    "company": {
+      "company_id": 3,
+      "company_name": "Stripe",
+      "industry": "FinTech",
+      "hq_location": "San Francisco, CA"
+    },
+    "job_posting": {
+      "job_id": 4,
+      "title": "Backend Engineer Intern",
+      "location_mode": "remote",
+      "job_type": "internship"
+    },
+    "tags": [
+      {
+        "tag_id": 4,
+        "tag_name": "Remote"
+      }
+    ],
+    "contacts": [
+      {
+        "contact_id": 3,
+        "contact_name": "Cara Sourcer",
+        "role": "Sourcer",
+        "email": "cara@stripe.com",
+        "phone": "333-333-3333"
+      }
+    ],
+    "interview_rounds": [],
+    "offer": null,
+    "status_history": []
+  }
+]
