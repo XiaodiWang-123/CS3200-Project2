@@ -1,6 +1,6 @@
-# CS3200 Project 2
+# Internship Application Tracker – MongoDB Document Database Design
 
-## Design & Implement a Document Database (MongoDB)
+CS3200 Practicum – Document Database Design using MongoDB
 
 ---
 
@@ -24,16 +24,34 @@ The main goal is to redesign the relational schema into a hierarchical document 
 
 ---
 
+## Problem Requirements
+
+The system is designed to support students in managing their internship application process. It must:
+
+* Track applications submitted by students
+* Store company and job posting information
+* Record interview rounds and outcomes
+* Maintain application status history
+* Store offers and decisions
+* Support tagging and categorization of applications
+* Allow efficient querying of application data
+
+The system prioritizes fast read operations and flexibility, making it suitable for a document-based database design.
+
+---
+
 ## MongoDB Data Model
 
 The database uses three main collections:
 
 ### 1. Applications (Main Collection)
 
-This is the core collection that embeds most related data:
+This is the core collection and serves as the primary entry point for most queries. It embeds related data to optimize read performance.
 
-* Student information (embedded)
-* Company information (embedded snapshot)
+Includes:
+
+* Embedded student snapshot
+* Embedded company snapshot
 * Job posting information
 * Interview rounds (embedded array)
 * Tags (embedded array)
@@ -41,9 +59,16 @@ This is the core collection that embeds most related data:
 * Offer (optional embedded object)
 * Status history (embedded array)
 
+---
+
 ### 2. Students
 
-Stores student master records.
+Stores student master records independently to support:
+
+* Direct student queries
+* Updates without affecting historical application data
+
+---
 
 ### 3. Companies
 
@@ -51,6 +76,19 @@ Stores company data with embedded:
 
 * Contacts
 * Job postings
+
+---
+
+## Design Justification
+
+The database design follows MongoDB best practices by using embedded documents for relationships that are frequently accessed together.
+
+* **Applications as root collection**: minimizes joins and supports common queries
+* **Embedded documents** (interviews, tags, contacts): improve read performance
+* **Data duplication** (student and company snapshots): preserves historical accuracy
+* **Separate collections** (Students, Companies): support independent queries and updates
+
+This hybrid approach balances performance, scalability, and data consistency.
 
 ---
 
@@ -78,8 +116,8 @@ screenshots/
   query6.png
 
 Requirement.pdf
-logical_model_mongo.pdf
-logical_model_mongo.png
+CS3200 Project 2 Mongo Logical Model.png
+ERD.png
 lucidchart_link.txt
 README.md
 ```
@@ -98,37 +136,56 @@ mongoimport --db internship_tracker_mongo --collection applications --file mongo
 
 ---
 
+## Running Queries
+
+You can execute the queries using MongoDB shell:
+
+```bash
+use internship_tracker_mongo
+load("mongo/query1.js")
+```
+
+Repeat for other query files as needed.
+
+---
+
 ## Queries Implemented
 
 ### Query 1
 
-Displays application details including student, company, job, and interview rounds.
+Retrieve application documents including embedded student, company, and interview data.
 
 ### Query 2 (Aggregation)
 
-Finds students who have received offers.
+Use an aggregation pipeline to identify students who have received offers.
 
 ### Query 3 (Aggregation)
 
-Counts applications per student and filters students with more than one application.
+Group applications by student and count total applications per student, filtering those with more than one application.
 
 ### Query 4 (Complex Search)
 
-Filters applications using logical operators ($and, $or, $nin).
+Filter applications using compound conditions with `$and`, `$or`, and `$nin`.
 
 ### Query 5
 
-Counts the number of applications for a specific student.
+Count total number of applications for a specific student using `countDocuments`.
 
 ### Query 6 (Update)
 
-Updates a document by setting the `isArchived` flag.
+Update application documents by setting the `isArchived` field based on a query condition.
 
 ---
 
 ## Screenshots
 
-Execution results for all queries are provided in the `screenshots` folder.
+Execution results for all queries are provided in the `screenshots/` folder.
+
+---
+
+## ERD
+
+The ERD diagram is provided as `ERD.png`, along with the Lucidchart link in `lucidchart_link.txt`.
 
 ---
 
@@ -150,11 +207,14 @@ Xiaodi Wang
 
 AI tools (ChatGPT) were used in this project for guidance and learning purposes, including:
 
-- Understanding MongoDB schema design concepts  
-- Clarifying query syntax and structure  
-- Assisting with debugging errors  
+* Understanding MongoDB schema design concepts
+* Clarifying query syntax and structure
+* Assisting with debugging errors
 
 All final design decisions, implementation, and submitted work were completed and fully understood by the author.
+
+---
+
 ## Video Demo
 
 https://youtu.be/bljDv2nWaeM
